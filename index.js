@@ -23,3 +23,7 @@ store.subscribe(() => {
   const state = store.getState();
   counter.textContent = state;
 });
+
+
+//такого в type action немає тому відтворюється початковий стан: "0"
+store.dispatch({type: 'INIT_APPLICATION'})
